@@ -93,7 +93,7 @@ job "hello-world-job-2" {
       # Specify the maximum resources required to run the task.
       resources {
         cpu    = 500 # MHz
-        memory = 128 # MB
+        memory = 200 # MB
       }
     }
   }
