@@ -97,5 +97,5 @@ resource "vault_kv_secret_v2" "httpd-secret" {
   )
 }
 resource "nomad_job" "hello-world-job-2" {
-  jobspec = file("hello-world-job-2.hcl")
+  jobspec = file("./hello-world-job-2.hcl")
 }
