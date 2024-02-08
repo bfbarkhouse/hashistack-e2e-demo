@@ -14,6 +14,7 @@ provider "nomad" {
   # Configuration options
   address     = "http://10.0.0.194:4646"
   skip_verify = true
+  secret_id = var.nomad_token
   #secret_id   = Set in the env var NOMAD_TOKEN
 }
 

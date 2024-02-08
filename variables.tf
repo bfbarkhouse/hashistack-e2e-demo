@@ -3,4 +3,9 @@ variable "vault_role_id" {
 }
 variable "vault_role_secret_id" {
   type = string
+  sensitive = true
+}
+variable "nomad_token" {
+  type = string
+  sensitive = true
 }
