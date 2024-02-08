@@ -84,7 +84,7 @@ path "kv/metadata/default/*" {
 }
 EOT
 }
-#Write a kv secret that the Nomad job will render via template
+#Write a kv secret that the Nomad job will render via template. This is for demonstation purpose only, secrets should not be populated in clear text obviously.
 resource "vault_kv_secret_v2" "httpd-secret" {
   mount                      = "kv"
   name                       = "/default/hello-world-job-2"
